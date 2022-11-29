@@ -1,0 +1,40 @@
+GET  http://localhost:3000/api/products
+
+###
+GET http://localhost:3000/api/products/available
+
+###
+GET http://localhost:3000/api/products/min/30/max/100
+
+###
+GET http://localhost:3000/api/products/6384c05167901131feb30866
+
+GET http://localhost:3000/api/clients
+
+###
+POST http://localhost:3000/api/clients
+Content-Type: application/json
+
+{
+    "name": "Mario",
+    "email": "mario@gmail.com",
+    "address": "Barco 27",
+    "age": 34,
+    "active": true
+}
+
+###
+PUT http://localhost:3000/api/clients/6385ee255ee03de7d3badad4
+Content-Type: application/json
+
+{
+    "age": 35,
+    "active": false
+}
+
+###
+DELETE http://localhost:3000/api/clients/6385ee255ee03de7d3badad4
+
+###
+
+GET https://457d-139-47-29-53.eu.ngrok.io/api/clients
